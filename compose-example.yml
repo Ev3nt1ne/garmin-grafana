@@ -35,6 +35,7 @@ services:
       # - KEEP_FIT_FILES=False # Stores the FIT files (downloads and saves them) when set to True - read docs for more details
       # - ALWAYS_PROCESS_FIT_FILES=False # Enables processing FIT files even if GPS data is not present in it when set to True, default False
       # - USER_TIMEZONE= # Can hardcode user's timezone - must be a valid TZ identifier like Europe/Budapest without quotes, fetches timezone automatically and dynamically on each run if set to empty (default) - Read docs
+      # - DAILY_RECORD_TIME=legacy # Time stamp of daily records (DailyStats, VO2_Max, FitnessAge...): legacy (default) keeps the original stamps, local_noon stamps them at 12:00 local time of their date so they stay on that date in any viewer time zone - Read docs
       # - INFLUXDB_ENDPOINT_IS_HTTP=True # Set this to False if you are using HTTPS for your influxdb connection (over the internet)
       # - FORCE_REPROCESS_ACTIVITIES=True # Enables re-processing of FIT files on iterative updates when set to True (default), setting to False may save processing time but known for skipping activities
 
